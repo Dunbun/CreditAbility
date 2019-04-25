@@ -58,6 +58,7 @@
             android:inputType="numberDecimal" />
 
         <RadioGroup
+            android:id="@+id/currencygroup"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
@@ -95,6 +96,7 @@
 
 
         <RadioGroup
+            android:id="@+id/typeofcredit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
 
@@ -206,10 +208,10 @@
                 android:text="Ім'я: " />
 
             <EditText
-                android:id="@+id/nameET"
+                android:id="@+id/name"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="2"/>
+                android:layout_weight="2" />
         </LinearLayout>
 
         <LinearLayout
@@ -332,28 +334,28 @@
 
 
                 <EditText
-                    android:id="@+id/textView28s"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:textSize="14sp"/>
-
-                <EditText
-                    android:id="@+id/textView28"
+                    android:id="@+id/salary"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:textSize="14sp" />
 
                 <EditText
-                    android:id="@+id/textView30"
+                    android:id="@+id/pension"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:textSize="14sp" />
 
                 <EditText
-                    android:id="@+id/textView32"
+                    android:id="@+id/reward"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/anotherIncome"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -374,7 +376,7 @@
                 android:textAlignment="center" />
 
             <ImageView
-                android:id="@+id/imageView2"
+                android:id="@+id/imageViewIncome"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="0.5"
@@ -447,7 +449,7 @@
                 android:text="Поточні витрати" />
 
             <EditText
-                android:id="@+id/editText2"
+                android:id="@+id/currentcosts"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -470,7 +472,7 @@
                 android:text="Комунальні витрати" />
 
             <EditText
-                android:id="@+id/editText2s"
+                android:id="@+id/utilitycosts"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -493,7 +495,7 @@
                 android:text="Страхові платежі" />
 
             <EditText
-                android:id="@+id/editText24"
+                android:id="@+id/insurancepayments"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -516,7 +518,7 @@
                 android:text="Інші витрати" />
 
             <EditText
-                android:id="@+id/editText25"
+                android:id="@+id/anothercosts"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -539,7 +541,7 @@
                 android:textAlignment="center" />
 
             <ImageView
-                android:id="@+id/imageView"
+                android:id="@+id/imageViewSpend"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="0.5"
