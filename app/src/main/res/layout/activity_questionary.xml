@@ -5,7 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/backgroundgradient"
     tools:context=".Questionary">
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -55,26 +57,31 @@
             android:ems="10"
             android:inputType="numberDecimal" />
 
-        <RadioButton
-            android:id="@+id/grnradioButton"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="грн." />
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
-        <RadioButton
-            android:id="@+id/dolradioButton"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="дол." />
+            <RadioButton
+                android:id="@+id/grnradioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="грн." />
 
-        <RadioButton
-            android:id="@+id/eurradioButton"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="євр." />
+            <RadioButton
+                android:id="@+id/dolradioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="дол." />
+
+            <RadioButton
+                android:id="@+id/eurradioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="євр." />
+
+
+        </RadioGroup>
 
     </LinearLayout>
 
@@ -86,53 +93,60 @@
             android:textSize="15sp"
             android:textStyle="bold" />
 
-    <RadioButton
-        android:id="@+id/radioButton6"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="На житло для внутрішньо переселених осіб 18.99" />
 
-    <RadioButton
-        android:id="@+id/radioButton7"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text='Кредитування на обладнання, що виробляє "зелену енергію" 19.5' />
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
 
-    <RadioButton
-        android:id="@+id/radioButton8"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Програма перекредитування 20" />
+            <RadioButton
+                android:id="@+id/radioButton6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="На житло для внутрішньо переселених осіб 18.99" />
 
-    <RadioButton
-        android:id="@+id/radioButton9"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Кредит під іпотеку 20.49" />
+            <RadioButton
+                android:id="@+id/radioButton7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text='Кредитування на обладнання, що виробляє "зелену енергію" 19.5' />
 
-    <RadioButton
-        android:id="@+id/radioButton10"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Нерухомість на вторинному ринку 19.99" />
+            <RadioButton
+                android:id="@+id/radioButton8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Програма перекредитування 20" />
 
-    <RadioButton
-        android:id="@+id/radioButton11"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Нерухомість на первинному ринку 8.5" />
+            <RadioButton
+                android:id="@+id/radioButton9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Кредит під іпотеку 20.49" />
 
-    <RadioButton
-        android:id="@+id/radioButton12"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Кредит на нове авто 0.1+" />
+            <RadioButton
+                android:id="@+id/radioButton10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Нерухомість на вторинному ринку 19.99" />
 
-    <RadioButton
-        android:id="@+id/radioButton13"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Кредит на елктромобіль 0.1+" />
+            <RadioButton
+                android:id="@+id/radioButton11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Нерухомість на первинному ринку 8.5" />
+
+            <RadioButton
+                android:id="@+id/radioButton12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Кредит на нове авто 0.1+" />
+
+            <RadioButton
+                android:id="@+id/radioButton13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Кредит на елктромобіль 0.1+" />
+
+        </RadioGroup>
 
     <LinearLayout
         android:layout_width="match_parent"
