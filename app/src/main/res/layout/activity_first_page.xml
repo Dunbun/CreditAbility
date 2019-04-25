@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundgradient"
+    tools:context=".FirstPage">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:text="Дана програма надає змогу заповнити анкету, за допомогою якої, кожен бажаючий може приблизно перевірити чи являється він кредитоспроможним"
+        android:textAlignment="center"
+        android:textColor="@android:color/black" />
+
+    <Button
+        android:id="@+id/entranceBtn"
+        d="@drawabl"
+        android:layout_width="56dp"
+        android:layout_height="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/entrance" />@+id/entranceBtn"
+        android:id="@+id/entr"
+
+        id:layout_width="59dp"
+
+        d:layout_height="33dp"
+        andro
+        _alignParentTop="true"
+        andro
+        _alignParentEnd="true"
+        android: />
+</RelativeLayout>
