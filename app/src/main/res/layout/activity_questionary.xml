@@ -192,12 +192,11 @@
                 android:layout_weight="0"
                 android:text="Прізвище: " />
 
-            <TextView
-                android:id="@+id/textView12"
+            <EditText
+                android:id="@+id/surnameET"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="2"
-                android:text="TextView" />
+                android:layout_weight="2"/>
 
             <TextView
                 android:id="@+id/textView13"
@@ -206,12 +205,11 @@
                 android:layout_weight="0"
                 android:text="Ім'я: " />
 
-            <TextView
-                android:id="@+id/textView14"
+            <EditText
+                android:id="@+id/nameET"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="2"
-                android:text="TextView" />
+                android:layout_weight="2"/>
         </LinearLayout>
 
         <LinearLayout
@@ -226,12 +224,11 @@
                 android:layout_weight="0"
                 android:text="По-батькові: " />
 
-            <TextView
-                android:id="@+id/textView16"
+            <EditText
+                android:id="@+id/fathername"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="TextView" />
+                android:layout_weight="1"/>
 
             <TextView
                 android:id="@+id/textView17"
@@ -240,12 +237,11 @@
                 android:layout_weight="0"
                 android:text="Дата народження: " />
 
-            <TextView
-                android:id="@+id/textView18"
+            <EditText
+                android:id="@+id/dateOfBirth"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="TextView" />
+                android:layout_weight="1"/>
         </LinearLayout>
 
         <TextView
@@ -290,12 +286,14 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="0"
+                    android:layout_marginTop="12dp"
                     android:text="Заробітня плата" />
 
                 <TextView
                     android:id="@+id/textView27"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="22dp"
                     android:layout_weight="0"
                     android:text="Інша робота(пенсія)" />
 
@@ -303,6 +301,7 @@
                     android:id="@+id/textView29"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="22dp"
                     android:layout_weight="0"
                     android:text="Премії" />
 
@@ -310,16 +309,9 @@
                     android:id="@+id/textView31"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="0"
+                    android:layout_marginTop="22dp"
                     android:text="Інші доходи" />
 
-                <TextView
-                    android:id="@+id/textView33"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0"
-                    android:text="РАЗОМ ДОХОДІВ:"
-                    android:textAlignment="center" />
 
             </LinearLayout>
 
@@ -338,42 +330,61 @@
                     android:textAlignment="center"
                     android:textStyle="bold" />
 
-                <TextView
-                    android:id="@+id/textView26"
-                    android:layout_width="wrap_content"
+
+                <EditText
+                    android:id="@+id/textView28s"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="TextView" />
+                    android:textSize="14sp"/>
 
-                <TextView
+                <EditText
                     android:id="@+id/textView28"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="TextView" />
+                    android:textSize="14sp" />
 
-                <TextView
+                <EditText
                     android:id="@+id/textView30"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="TextView" />
+                    android:textSize="14sp" />
 
-                <TextView
+                <EditText
                     android:id="@+id/textView32"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="TextView" />
-
-                <TextView
-                    android:id="@+id/textView34"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="TextView" />
+                    android:textSize="14sp" />
             </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
 
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.75"
+                android:text="ЗАГАЛЬНИЙ ДОХІД:"
+                android:textAlignment="center" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                app:srcCompat="@drawable/arrow" />
+
+            <TextView
+                android:id="@+id/textViewtotalincome"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
         </LinearLayout>
 
         <TextView
@@ -419,7 +430,135 @@
                     android:textAlignment="center"
                     android:textStyle="bold" />
             </LinearLayout>
+
         </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView41"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Поточні витрати" />
+
+            <EditText
+                android:id="@+id/editText2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView41s"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Комунальні витрати" />
+
+            <EditText
+                android:id="@+id/editText2s"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView414"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Страхові платежі" />
+
+            <EditText
+                android:id="@+id/editText24"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView412"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Інші витрати" />
+
+            <EditText
+                android:id="@+id/editText25"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.75"
+                android:text="ЗАГАЛЬНІ ВИТРАТИ:"
+                android:textAlignment="center" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                app:srcCompat="@drawable/arrow" />
+
+            <TextView
+                android:id="@+id/textViewtotalspend"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/analyze"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Аналізувати"
+            android:textAlignment="center" />
 
     </LinearLayout>
     </ScrollView>
