@@ -94,7 +94,6 @@
             android:textSize="15sp"
             android:textStyle="bold" />
 
-
         <RadioGroup
             android:id="@+id/typeofcredit"
             android:layout_width="wrap_content"
@@ -104,49 +103,57 @@
                 android:id="@+id/radioButton6"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="На житло для внутрішньо переселених осіб 18.99" />
-
-            <RadioButton
-                android:id="@+id/radioButton7"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text='Кредитування на обладнання, що виробляє "зелену енергію" 19.5' />
+                android:tag="18.99,30"
+                android:text="На житло для внутрішньо переселених осіб" />
 
             <RadioButton
                 android:id="@+id/radioButton8"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Програма перекредитування 20" />
+                android:tag="20,20"
+                android:text="Програма перекредитування" />
 
             <RadioButton
                 android:id="@+id/radioButton9"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Кредит під іпотеку 20.49" />
+                android:tag="20.49,20"
+                android:text="Кредит під іпотеку" />
 
             <RadioButton
                 android:id="@+id/radioButton10"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Нерухомість на вторинному ринку 19.99" />
+                android:tag="19.99,20"
+                android:text="Нерухомість на вторинному ринку" />
 
             <RadioButton
                 android:id="@+id/radioButton11"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Нерухомість на первинному ринку 8.5" />
+                android:tag="8.9,20"
+                android:text="Нерухомість на первинному ринку" />
 
             <RadioButton
                 android:id="@+id/radioButton12"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Кредит на нове авто 0.1+" />
+                android:tag="0.5,7"
+                android:text="Кредит на нове авто" />
 
             <RadioButton
                 android:id="@+id/radioButton13"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Кредит на елктромобіль 0.1+" />
+                android:tag="0.5,7"
+                android:text="Кредит на елктромобіль" />
+
+            <RadioButton
+                android:id="@+id/radioButton7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="19.5,6"
+                android:text='Кредитування на обладнання, що виробляє "зелену енергію"' />
 
         </RadioGroup>
 
@@ -338,6 +345,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
                     android:textSize="14sp" />
 
                 <EditText
@@ -345,6 +354,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
                     android:textSize="14sp" />
 
                 <EditText
@@ -352,6 +363,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
                     android:textSize="14sp" />
 
                 <EditText
@@ -359,6 +372,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
                     android:textSize="14sp" />
             </LinearLayout>
         </LinearLayout>
