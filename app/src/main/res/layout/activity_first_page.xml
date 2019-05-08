@@ -13,26 +13,15 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_centerVertical="true"
-        android:text="Дана програма надає змогу заповнити анкету, за допомогою якої, кожен бажаючий може приблизно перевірити чи являється він кредитоспроможним"
+        android:text="Дана програма допомагає аналізувати кредитоспроможність клієнта. Для цього потрібно нажати знак долара в куті та заповнити анкету та нажати кнопку 'Аналізувати'. Якщо в анкеті вибрано кредит в доларах або в євро, то виведеться графік курсу даної валюти за останній тиждень, щоб користувач міг оцінити коливання курсу, що доможе в оцінці кредитоспроможності"
         android:textAlignment="center"
         android:textColor="@android:color/black" />
 
     <Button
         android:id="@+id/entranceBtn"
-        d="@drawabl"
         android:layout_width="56dp"
         android:layout_height="35dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:background="@drawable/entrance" />@+id/entranceBtn"
-        android:id="@+id/entr"
-
-        id:layout_width="59dp"
-
-        d:layout_height="33dp"
-        andro
-        _alignParentTop="true"
-        andro
-        _alignParentEnd="true"
-        android: />
+        android:background="@drawable/entrance" />
 </RelativeLayout>

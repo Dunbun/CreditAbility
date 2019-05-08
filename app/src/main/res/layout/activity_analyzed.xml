@@ -1,9 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/backgroundgradient"
     tools:context=".Analyzed">
 
-</android.support.constraint.ConstraintLayout>
+    <TextView
+        android:id="@+id/fullName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:layout_marginBottom="5dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/totalIncome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:layout_marginBottom="5dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/totalCosts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:layout_marginBottom="5dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/pureIncome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:layout_marginBottom="5dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/creditInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:layout_marginBottom="5dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:layout_marginBottom="5dp"
+        android:text="" />
+
+    <LinearLayout
+        android:id="@+id/whereToDraw"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+</LinearLayout>

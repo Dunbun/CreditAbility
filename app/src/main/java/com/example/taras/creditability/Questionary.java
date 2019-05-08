@@ -24,7 +24,6 @@ public class Questionary extends AppCompatActivity {
     String sName = "";//
     String sSurname = "";//
     String sFathername = "";//
-    String sDateOfBirth = "";//
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,7 +37,6 @@ public class Questionary extends AppCompatActivity {
         final EditText name = (EditText)findViewById(R.id.name);
         final EditText surname = (EditText)findViewById(R.id.surnameET);
         final EditText fathername = (EditText)findViewById(R.id.fathername);
-        final EditText dateOfBirth = (EditText)findViewById(R.id.dateOfBirth);
         final TextView totalIncome = (TextView)findViewById(R.id.textViewtotalincome);
         final TextView totalSpend = (TextView)findViewById(R.id.textViewtotalspend);
         Button analyzeBtn = (Button)findViewById(R.id.analyze);
@@ -80,6 +78,7 @@ public class Questionary extends AppCompatActivity {
                 radioButton = creditTypeRadioGroup.findViewById(radioButtonID);
                 idx = creditTypeRadioGroup.indexOfChild(radioButton);
                 r = (RadioButton) creditTypeRadioGroup.getChildAt(idx);
+                sTypeOfCredit = r.getText().toString();
                 String tmp = r.getTag().toString();
                 String arr[] = tmp.split(",");
 
@@ -99,7 +98,6 @@ public class Questionary extends AppCompatActivity {
                 sSurname = surname.getText().toString();
                 sName = name.getText().toString();
                 sFathername = fathername.getText().toString();
-                sDateOfBirth = dateOfBirth.getText().toString();
 
                 if(!wantedSum.getText().toString().equals("")) {
                     dneededSum = Double.parseDouble(wantedSum.getText().toString());
@@ -117,8 +115,8 @@ public class Questionary extends AppCompatActivity {
                 newIntent.putExtra("neededSum",dneededSum);
                 newIntent.putExtra("percentage",percentage);
                 newIntent.putExtra("term",neededTerm);
-                newIntent.putExtra("date",sDateOfBirth);
                 newIntent.putExtra("currency",sCurrency);
+                newIntent.putExtra("creditType",sTypeOfCredit);
 
                 startActivity(newIntent);
 
